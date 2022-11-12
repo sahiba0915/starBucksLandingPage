@@ -282,89 +282,6 @@ btn-light-outline:hover {
     margin-right: 1.25rem;
 }
 
-@media (max-width: 768px) {
-
-    .grid-col-2 {
-        grid-template-columns: 1fr;
-    }
-
-    .grid-reversed :first-child {
-        order: 0;
-    }
-
-    .navbar-brand img {
-        width: 2.5rem;
-        height: 2.5rem;
-    }
-
-    .navbar .navbar-nav-left,
-    .navbar .navbar-nav-right {
-        display: none;
-    }
-
-    .footer {
-        text-align: center;
-    }
-}
-
-@media (max-width: 768px) {
-    .hamburger {
-      display: block;
-    }
-  
-    .grid-col-2 {
-      grid-template-columns: 1fr;
-    }
-  
-    .grid-reversed :first-child {
-      order: 0;
-    }
-  
-    .navbar-brand img {
-      width: 2.5rem;
-      height: 2.5rem;
-    }
-  
-    .navbar .navbar-nav-left,
-    .navbar .navbar-nav-right {
-      display: none;
-    }
-  
-    .footer {
-      text-align: center;
-    }
-  }
-
-@media (max-width: 960px) {
-    .text-xl {
-        font-size: 1.8rem;
-    }
-
-    .text-lg {
-        font-size: 1.5rem;
-    }
-
-    .text-md {
-        font-size: 1.1rem;
-    }
-
-    .navbar .navbar-nav-left,
-    .navbar .navbar-nav-right {
-      display: none;
-    }
-
-}
-
-@media (max-width: 1440px) {
-    .box {
-        max-width: 90rem;
-        margin-right: auto;
-        margin-left: auto;
-    }
-
-
-}
-
 
 /* Hamburger Menu Icon */
 .hamburger {
@@ -376,6 +293,7 @@ btn-light-outline:hover {
     border: none;
     z-index: 10;
     transition: all 0.25s;
+    display: none;
 }
 
 .hamburger-top,
@@ -445,7 +363,7 @@ btn-light-outline:hover {
 }
 
 .mobile-menu a:hover {
-    color: var(--color-primary);
+    color: var(--primary-color);
 }
 
 .mobile-menu div {
@@ -464,4 +382,83 @@ btn-light-outline:hover {
 
 .no-scroll {
     overflow: hidden;
+}
+
+
+/* media-queries */
+@media (max-width: 768px) {
+
+    .hamburger{
+    display: block;
+    }
+
+    .grid-col-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-reversed :first-child {
+        order: 0;
+    }
+
+    .navbar-brand img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .navbar .navbar-nav-left,
+    .navbar .navbar-nav-right {
+        display: none;
+    }
+
+    .footer {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .grid-col-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-reversed :first-child {
+        order: 0;
+    }
+
+    .navbar-brand img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .navbar .navbar-nav-left,
+    .navbar .navbar-nav-right {
+        display: none;
+    }
+
+    .footer {
+        text-align: center;
+    }
+}
+
+@media (max-width: 960px) {
+    .text-xl {
+        font-size: 1.8rem;
+    }
+
+    .text-lg {
+        font-size: 1.5rem;
+    }
+
+    .text-md {
+        font-size: 1.1rem;
+    }
+
+}
+
+@media (max-width: 1440px) {
+    .box {
+        max-width: 90rem;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
