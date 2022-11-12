@@ -96,7 +96,7 @@ section a {
 .navbar-nav-left {
     text-transform: uppercase;
     flex: 1;
-    margin-left: 20px;
+    margin-left: 1.25rem;
 }
 
 .navbar-nav-right li:first-child a {
@@ -114,7 +114,7 @@ section a {
     display: inline-block;
     background: none;
     border: 1px var(--black) solid;
-    border-radius: 50px;
+    border-radius: 3.1rem;
     padding: 7px 16px;
     line-height: 1.2;
     text-align: center;
@@ -135,7 +135,13 @@ section a {
     background-color: #333;
 }
 
-.btn-dark-outline:hover {
+.btn-light-outline {
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-dark-outline:hover,
+btn-light-outline:hover {
     background-color: rgba(0, 0, 0, 0.06);
 }
 
@@ -166,27 +172,27 @@ section a {
 }
 
 .text-xl {
-    font-size: 50px;
+    font-size: 3.1rem;
     text-transform: uppercase;
     letter-spacing: 6px;
-    font-weight: 600;
-    margin-bottom: 20px;
+    font-weight: 37.5rem;
+    margin-bottom: 1.25rem;
 }
 
 .text-lg {
-    font-size: 40px;
+    font-size: 2.5rem;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .text-md {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
 }
 
 .text-sm {
-    font-size: 19px;
-    margin-bottom: 20px;
+    font-size: 1.1rem;
+    margin-bottom: 1.25rem;
 }
 
 /* Padding */
@@ -195,34 +201,72 @@ section a {
 }
 
 .py-md {
-    padding: 20px 0;
+    padding: 1.25rem 0;
 }
 
 .py-lg {
-    padding: 40px 0;
+    padding: 2.5rem 0;
 }
 
 /* Box */
 .box {
-    margin-bottom: 30px;
+    margin-bottom: 1.8rem;
 }
 
 .box-inner {
-    max-width: 700px;
+    max-width: 43.75rem;
     margin: 0 auto;
+}
+
+.box-text {
+    max-width: 31.25rem;
+    text-align: center;
+    justify-self: center;
+    padding: 1.25rem 0;
+    margin: 0 auto;
+}
+
+.box-text .btn {
+    margin-top: 1.25rem;
+}
+
+.box-text{
+    max-width: 600px;
+}
+
+/* Grid */
+.grid-col-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grid-reversed :first-child {
+    order: 2;
 }
 
 
 @media (max-width: 960px) {
     .text-xl {
-        font-size: 30px;
+        font-size: 1.8rem;
     }
 
     .text-lg {
-        font-size: 25px;
+        font-size: 1.5rem;
     }
 
     .text-md {
-        font-size: 19px;
+        font-size: 1.1rem;
     }
 }
+
+@media (min-width: 1440px) {
+    .box {
+      max-width: 1440px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+  }
